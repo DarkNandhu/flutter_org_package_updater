@@ -25,7 +25,7 @@ Future<void> main(List<String> arguments) async {
 }
 
 Future<Map<String, String>> loadConfig() async {
-  final File configFile = File('config.txt');
+  final File configFile = File('flutter_org_repo_updater_config.txt');
   if (await configFile.exists()) {
     final lines = await configFile.readAsLines();
     final config = <String, String>{};
