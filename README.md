@@ -12,11 +12,17 @@ This Dart script updates dependencies in a Flutter project's `pubspec.yaml` by c
 
 ## Installation
 
-1. **Clone the repository or download the script files.**
+1. **Add this repository as a dev dependency in your Flutter project:**
 
-2. **Ensure you have Dart and Flutter installed.**
+   ```yaml
+   dev_dependencies:
+     flutter_org_repo_updater:
+       git:
+         url: https://github.com/your_username/flutter_org_repo_updater.git
+         ref: master
+   ```
 
-3. **Create a configuration file named `flutter_org_repo_updater_config.txt` in the root of your Flutter project with the following content:**
+2. **Create a configuration file named `flutter_org_repo_updater_config.txt` in the root of your Flutter project with the following content:**
 
    ```plaintext
    org_prefix=xseed
@@ -37,10 +43,8 @@ This Dart script updates dependencies in a Flutter project's `pubspec.yaml` by c
 2. **Run the script using Dart:**
 
    ```bash
-   dart run path/to/flutter_org_repo_updater.dart
+   dart run flutter_org_repo_updater
    ```
-
-   Replace `path/to/flutter_org_repo_updater.dart` with the actual path to the Dart script.
 
 ## Script Structure
 
@@ -59,3 +63,4 @@ The main class handles the configuration loading, dependency updating, and runni
 - `_isRelevantDependency()`: Checks if a dependency is relevant based on `org_prefix` or `org_url`.
 - `_getLatestTag()`: Retrieves the latest tag from the GitHub repository.
 - `_isProdPackage()`: Checks if a package is a production package.
+
