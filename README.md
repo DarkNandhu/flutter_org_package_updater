@@ -19,7 +19,7 @@ This Dart script updates dependencies in a Flutter project's `pubspec.yaml` by c
      flutter_org_repo_updater:
        git:
          url: https://github.com/your_username/flutter_org_repo_updater.git
-         ref: master
+         ref: main
    ```
 
 2. **Create a configuration file named `flutter_org_repo_updater_config.txt` in the root of your Flutter project with the following content:**
