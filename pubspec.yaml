@@ -17,3 +17,6 @@ dependencies:
 dev_dependencies:
   lints: ^2.1.0
   test: ^1.24.0
+
+executables: 
+  flutter_org_repo_updater: bin/flutter_org_repo_updater.dart
